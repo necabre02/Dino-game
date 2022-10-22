@@ -1,0 +1,191 @@
+*{
+margin: 0;
+padding: 0;
+/* background-color: rgb(57, 245, 57); */
+color: white;
+background-image: url("background1.jpg");
+background-size: cover;
+overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    /* margin: 23% 50% 77% 50%; */
+    /* transform: translateX(-50%); */
+    margin: 22% 40%;
+font-size: 250%;
+    background-image: none;
+    width: 100%;
+animation: text 1.5s infinite linear ;
+    
+}
+
+
+
+.dirt{
+    background-image: url("dirt.jpg");
+    background-size: cover;
+    position:relative;
+    width: 100%;
+    height: auto;
+    /* height: 200px; */
+    
+}
+
+
+
+.game{
+    /* height: 677px; */
+    height: 860px;
+    width: 100%;
+    border: 4px solid black;
+    background-color: white;
+    
+    
+}
+
+.character{
+    height: 120px;
+    width: 60px;
+    /* background-color: aqua; */
+    position: relative;
+    top: 740px;
+    left: 100px;
+   
+    background-image: url("dino.png");
+}
+
+.jump {
+    animation: jump  0.5s ease;
+}
+
+.object {
+    height: 70px;
+    width: 50px;
+    position: relative;
+    top: 670px;
+    left:   1380px;
+    /* animation: animation1 infinite 1.5s linear 500ms ; */
+    background-image: url("cactus.png");
+  animation:none;
+}
+
+span, .brojilo {
+    display: block;
+    background-color: white;
+    background-image: none;
+}
+
+.brojilo{
+    position: absolute;
+    display: inline-block; 
+    width: 100%;
+    padding: 1em 0; 
+    text-align: center;
+    /* font-size: 600%; */
+    background-color: transparent;
+    line-height: 1em;
+    font-size: 6em;
+    /* color: rgb(22, 236, 22); */
+}
+.msg{
+    position:absolute;
+    text-align: center;
+    font-size: 300%;
+    background-color: rgb(149, 149, 255);
+}
+
+
+
+
+@keyframes animation1{
+0%{ left: 1382px;
+}
+100% {
+    left: 0px;
+}
+}
+
+@keyframes jump {
+0%{
+    top: 740px;
+}
+50% {
+    top: 600px ;
+}
+100% {
+    top: 740px;
+}
+}
+
+@keyframes animation2{
+    0%{ left: 1700px;
+    }
+    100% {
+        left: 1px;
+    }
+    }
+
+@keyframes animation3{
+        0%{ left: 1800px;
+        }
+        100% {
+            left: 1px;
+        }
+        }
+
+ @keyframes animation4{
+     0%{ left: 2000px;
+       opacity: 0.9;
+        }
+    50% {opacity: 0.4;}
+    100% {
+        left: 1px;
+              opacity: 1;
+      }
+         }
+@keyframes animation5{
+     0%{ left: 2000px;
+                    opacity: 0.6;
+                }
+ 50% {opacity: 0.2;}
+                100% {
+     left: 1px;
+     opacity: 0.7;
+                }
+              }
+
+ @keyframes animation6{
+   0%{ left: 2000px;
+                               opacity: 0.5;
+                        }
+            50% {opacity: 0.2;}
+                              100% {
+  left: 1px;
+    opacity: 0.6;
+                              }
+                       }
+
+                       @keyframes text{
+                        0%{ opacity: 1;
+                                      
+                                   }
+                    50% {opacity: 0.3;}
+                                   100% {
+                       
+                        opacity: 1;
+                                   }
+ }
+ @keyframes animation7{
+    0%{ left: 2000px;
+ opacity: 0.5;
+ 
+                         }
+            0% {opacity: 0.6;
+                transform: scale(300%);}
+                               100% {
+                                
+   left: 1px;
+     opacity: 0.7;
+                               }
+                        }
